@@ -1,194 +1,238 @@
+/* Réglage des marges, de la police de caractères et de la largeur du corps */
 body {
-  margin: 50px auto;
-  font-family: "Inter", sans-serif;
-  width: 1200px;
-  margin-left: 220px;
+  margin: 50px auto; /* Marge autour du corps, centré horizontalement */
+  font-family: "Inter", sans-serif; /* Police de caractères Inter */
+  width: 1200px; /* Largeur fixe du corps */
+  margin-left: 220px; /* Marge à gauche */
 }
+
+/* Application du modèle de grille aux sections principales du document */
 main,
 nav,
 .info,
 .bottom {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 40px;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+  margin-top: 40px; /* Marge en haut */
 }
+
+/* Style pour le titre principal h1 */
 h1 {
-  font-size: 45px;
+  font-size: 45px; /* Taille de police */
 }
+
+/* Style pour les sous-titres h4 */
 h4 {
-  font-size: 15px;
-  line-height: 0;
+  font-size: 15px; /* Taille de police */
+  line-height: 0; /* Elimination de l'espace entre les lignes */
 }
+
+/* Style pour les images */
 img {
-  width: 100px;
-  padding: 0 20px 0 30px;
+  width: 100px; /* Largeur fixe */
+  padding: 0 20px 0 30px; /* Espacement autour des images */
 }
+
+/* Style pour les paragraphes, les lignes horizontales et la navigation */
 p,
 hr,
 .nav {
-  font-size: 12px;
-  opacity: 0.5;
+  font-size: 12px; /* Taille de police */
+  opacity: 0.5; /* Opacité pour un effet visuel */
   display: flex;
-  gap: 40px;
+  gap: 40px; /* Espacement entre les éléments */
   align-items: center;
-  line-height: 22px;
-}
-hr {
-  margin: 25px 0 40px 0;
-  width: 250px;
-}
-button {
-  padding: 14px 22px;
-  letter-spacing: 4px;
-  font-weight: bold;
-  color: white;
-  background: hsl(5, 85%, 63%);
-  border: none;
-  font-size: 10px;
-  margin-top: 25px;
-}
-footer {
-  margin-right: 240px;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  line-height: 22px; /* Hauteur de ligne */
 }
 
+hr {
+  margin: 25px 0 40px 0; /* Marge autour de la ligne horizontale */
+  width: 250px; /* Largeur de la ligne horizontale */
+}
+
+/* Style pour les boutons */
+button {
+  padding: 14px 22px; /* Espacement interne */
+  letter-spacing: 4px; /* Espacement entre les caractères */
+  font-weight: bold; /* Gras */
+  color: white; /* Couleur du texte */
+  background: hsl(5, 85%, 63%); /* Couleur de fond */
+  border: none; /* Pas de bordure */
+  font-size: 10px; /* Taille de police */
+  margin-top: 25px; /* Marge en haut */
+}
+
+/* Style pour le pied de page */
+footer {
+  margin-right: 240px; /* Marge à droite */
+}
+
+/* Style pour l'attribution dans le pied de page */
+.attribution {
+  font-size: 11px; /* Taille de police */
+  text-align: center; /* Alignement au centre */
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%); /* Couleur des liens */
+}
+
+/* Style spécifique pour la section "bottom" */
 .bottom {
-  display: flex;
+  display: flex; /* Disposition en ligne des éléments enfants */
 }
+
+/* Style pour la section de droite */
 .right {
-  color: white;
-  background: black;
-  width: 240px;
-  height: 450px;
-  padding: 0 30px 0 20px;
+  color: white; /* Couleur du texte */
+  background: black; /* Couleur de fond */
+  width: 240px; /* Largeur fixe */
+  height: 450px; /* Hauteur fixe */
+  padding: 0 30px 0 20px; /* Espacement interne */
 }
+
 .number {
-  opacity: 0.2;
-  font-size: 30px;
-  font-weight: bold;
+  opacity: 0.2; /* Opacité pour un effet visuel */
+  font-size: 30px; /* Taille de police */
+  font-weight: bold; /* Gras */
 }
+
 .info {
-  margin-top: 0;
+  margin-top: 0; /* Marge en haut */
 }
+
 .question {
-  margin: 10px 30px 0 0;
-  width: 280px;
+  margin: 10px 30px 0 0; /* Marge autour de la question */
+  width: 280px; /* Largeur fixe */
 }
+
 .sentenceBottom {
-  width: 180px;
+  width: 180px; /* Largeur fixe */
 }
+
+/* Style pour la navigation */
 .nav {
-  margin-left: -30px;
+  margin-left: -30px; /* Marge à gauche avec ajustement négatif */
 }
+
+/* Styles pour certains éléments spécifiques avec des IDs */
 #imgDesktop,
 #logo,
 #firstBottom {
-  padding: 0 35px 0 0;
+  padding: 0 35px 0 0; /* Espacement autour des éléments */
 }
+
 #firstBottom {
-  padding: 0 20px 0 0;
-  margin-bottom: 100px;
+  padding: 0 20px 0 0; /* Espacement spécifique pour le premier élément de bas */
+  margin-bottom: 100px; /* Marge en bas */
 }
+
 #titleLeft {
-  margin-top: 20px;
-  width: 300px;
-  line-height: 50px;
+  margin-top: 20px; /* Marge en haut */
+  width: 300px; /* Largeur fixe */
+  line-height: 50px; /* Hauteur de ligne */
 }
+
 #titleRight {
-  color: hsl(35, 77%, 62%);
-  font-size: 35px;
+  color: hsl(35, 77%, 62%); /* Couleur du texte */
+  font-size: 35px; /* Taille de police */
 }
+
 #imgDesktop {
-  width: 625px;
-  height: 260px;
+  width: 625px; /* Largeur fixe */
+  height: 260px; /* Hauteur fixe */
 }
+
 #imgMobile,
 #menu,
 #menuClose {
-  display: none;
+  display: none; /* Cacher par défaut */
 }
+
 #logo {
-  width: 50px;
+  width: 50px; /* Largeur fixe */
 }
+
+/* Styles pour les états de survol et d'activation de certains éléments */
 h4:hover {
-  color: hsl(35, 77%, 62%);
-  cursor: pointer;
-  transition: 0.2s;
+  color: hsl(35, 77%, 62%); /* Changement de couleur au survol */
+  cursor: pointer; /* Curseur pointeur au survol */
+  transition: 0.2s; /* Transition de 0.2 secondes pour une animation fluide */
 }
+
 button:hover {
-  background: black;
-  cursor: pointer;
-  transition: 0.2s;
+  background: black; /* Changement de couleur de fond au survol */
+  cursor: pointer; /* Curseur pointeur au survol */
+  transition: 0.2s; /* Transition de 0.2 secondes pour une animation fluide */
 }
+
 .nav span:hover,
 .titleBottom:hover {
-  color: hsl(5, 85%, 63%);
-  cursor: pointer;
-  transition: 0.2s;
+  color: hsl(5, 85%, 63%); /* Changement de couleur au survol */
+  cursor: pointer; /* Curseur pointeur au survol */
+  transition: 0.2s; /* Transition de 0.2 secondes pour une animation fluide */
 }
+
+/* Styles pour les états d'activation de certains éléments */
 .nav span:active,
 button:active,
 h4:active,
 #menu:active,
 #menuClose:active {
-  transform: scale(0.98);
+  transform: scale(0.98); /* Réduction de l'échelle pour simuler l'activation */
 }
+
+/* Media query pour les écrans de petite taille (max-width: 425px) */
 @media screen and (max-width: 425px) {
   body {
-    margin: 40px;
-    width: 300px;
+    margin: 40px; /* Marge réduite */
+    width: 300px; /* Largeur réduite */
   }
   img,
   #firstBottom {
-    padding: 0 20px 30px 0;
+    padding: 0 20px 30px 0; /* Espacement spécifique pour les images et le premier élément de bas */
   }
   button {
-    margin: 10px 0 60px 0;
+    margin: 10px 0 60px 0; /* Marge spécifique pour les boutons */
   }
   footer {
-    margin: 100px 0 0 0;
+    margin: 100px 0 0 0; /* Marge spécifique pour le pied de page */
   }
   main,
   .info {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Une colonne pour les écrans de petite taille */
   }
   .bottom {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Envelopper les éléments sur plusieurs lignes */
   }
   .right {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Marge en bas spécifique pour la section de droite */
   }
   .visible {
-    display: block;
+    display: block; /* Afficher les éléments visibles */
   }
   .nav,
   #imgDesktop {
-    display: none;
+    display: none; /* Cacher la navigation et l'image de bureau */
   }
   #firstBottom,
   #titleLeft {
-    margin: 0;
+    margin: 0; /* Ajustement des marges pour le premier élément de bas et le titre de gauche */
   }
   #imgMobile,
   #menu {
-    display: block;
+    display: block; /* Afficher l'image mobile et l'icône du menu */
   }
   #imgMobile {
-    width: 290px;
+    width: 290px; /* Largeur spécifique pour l'image mobile */
   }
   #menu {
-    width: 50px;
-    margin: 5px 0 -10px 100px;
+    width: 50px; /* Largeur spécifique pour l'icône du menu */
+    margin: 5px 0 -10px 100px; /* Ajustement des marges */
   }
   #menuClose {
-    width: 30px;
-    margin: -40px 0 -30px -240px;
+    width: 30px; /* Largeur spécifique pour l'icône de fermeture du menu */
+    margin: -40px 0 -30px -240px; /* Ajustement des marges */
   }
 }
