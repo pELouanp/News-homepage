@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <!-- Balises méta pour le jeu de caractères et le viewport -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Permet d'afficher le site correctement en fonction du périphérique de l'utilisateur -->
 
-    <!-- Balise méta pour la description (SEO) -->
+     <!-- Balise méta pour la description (SEO) -->
     <meta
       name="description"
-      content="Explorez les dernières actualités et articles sur la technologie, le développement web, et plus encore. Restez informé avec la page d'accueil d'actualités de Frontend Mentor."
+      content="Explore the latest news and articles on technology, web development, and more. Stay informed with the Frontend Mentor news homepage."
     />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 
     <!-- Titre de la page -->
-    <title>Frontend Mentor | Page d'accueil des actualités</title>
+    <title>Frontend Mentor | News homepage</title>
 
-    <!-- Styles internes pour l'attribution -->
+    <!-- Styles à personnaliser ou à supprimer selon vos besoins dans votre feuille de style -->
     <style>
       .attribution {
         font-size: 11px;
@@ -30,11 +28,7 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-
-    <!-- Lien vers la feuille de style externe -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Importation de la police Google Fonts - Inter -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
     </style>
@@ -42,25 +36,24 @@
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
     </style>
   </head>
-
   <body>
-    <!-- Section d'entête du contenu -->
+    <!-- Section d'entête -->
     <header>
       <!-- Section de navigation -->
       <nav>
         <!-- Icônes du logo et du menu -->
-        <img id="logo" src="logo.svg" alt="logo du site" />
-        <img id="menuClose" src="icon-menu-close.svg" alt="icône menu fermé" />
+        <img id="logo" src="logo.svg" alt="logo site" />
+        <img id="menuClose" src="icon-menu-close.svg" alt="icone menu fermé" />
         <div class="nav">
           <!-- Liens de navigation -->
-          <span>Accueil</span>
-          <span>Nouvelles</span>
-          <span>Populaires</span>
-          <span>Tendances</span>
-          <span>Catégories</span>
+          <span>Home</span>
+          <span>New</span>
+          <span>Popular</span>
+          <span>Trending</span>
+          <span>Categories</span>
         </div>
         <!-- Icône du menu -->
-        <img id="menu" src="icon-menu.svg" alt="icône du menu" />
+        <img id="menu" src="icon-menu.svg" alt="icone menu" />
       </nav>
     </header>
     <!-- Section principale du contenu -->
@@ -71,37 +64,40 @@
         <img
           id="imgDesktop"
           src="image-web-3-desktop.jpg"
-          alt="web 3 sur bureau"
+          alt="web 3 desktop"
         />
-        <img
-          id="imgMobile"
-          src="image-web-3-mobile.jpg"
-          alt="web 3 sur mobile"
-        />
-
+        <img id="imgMobile" src="image-web-3-mobile.jpg" alt="web 3 mobile" />
         <!-- Informations sur l'article -->
         <div class="info">
-          <h1 id="titleLeft">Le Futur Brillant du Web 3.0 ?</h1>
+          <h1 id="titleLeft">The Bright Future of Web 3.0?</h1>
           <div class="question">
             <p>
-              Nous plongeons dans la prochaine évolution du web qui prétend redonner le pouvoir aux utilisateurs. Mais est-ce qu'il tient vraiment sa promesse ?
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
             </p>
-            <button>LIRE LA SUITE</button>
+            <button>READ MORE</button>
           </div>
         </div>
       </section>
 
       <!-- Section de droite avec des titres d'articles et des résumés -->
       <section class="right">
-        <h2 id="titleRight">Nouvelles</h2>
-        <h4>Hydrogène VS Voitures Électriques</h4>
-        <p>Les voitures à hydrogène rattraperont-elles un jour les véhicules électriques ?</p>
+        <h2 id="titleRight">New</h2>
+        <h4>Hydrogen VS Electric Cars</h4>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         <hr />
-        <h4>Les Inconvénients de l'Art en Intelligence Artificielle</h4>
-        <p>Quels sont les effets indésirables possibles de la génération d'images à la demande par l'IA ?</p>
+        <h4>The Downsides of Al Artistry</h4>
+        <p>
+          What are the possible adverse effects of on-demand Al image
+          generation?
+        </p>
         <hr />
-        <h4>Le Financement VC est-il en Baisse ?</h4>
-        <p>Le financement privé par les sociétés de capital-risque est en baisse de 50% en glissement annuel. Nous examinons ce que cela signifie.</p>
+        <h4>Is VC Funding Drying Up?</h4>
+        <p>
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+        </p>
       </section>
     </main>
 
@@ -109,43 +105,49 @@
     <section class="bottom">
       <!-- Premier article avec image -->
       <div>
-        <img id="firstBottom" src="image-retro-pcs.jpg" alt="ordinateurs rétro" />
+        <img id="firstBottom" src="image-retro-pcs.jpg" alt="retro pcs" />
       </div>
       <!-- Deuxième article avec numéro, titre et extrait -->
       <div>
         <span class="number">01</span>
-        <h4 class="titleBottom">Revitalisation des PC Rétro</h4>
-        <p class="sentenceBottom">Que se passe-t-il lorsque d'anciens PC sont modernisés ?</p>
+        <h4 class="titleBottom">Reviving Retro PCs</h4>
+        <p class="sentenceBottom">
+          What happens when old PCs are given modern upgrades?
+        </p>
       </div>
       <!-- Troisième article avec image -->
       <div>
-        <img src="image-top-laptops.jpg" alt="meilleurs ordinateurs portables" />
+        <img src="image-top-laptops.jpg" alt="top laptops" />
       </div>
       <!-- Quatrième article avec numéro, titre et extrait -->
       <div>
         <span class="number">02</span>
-        <h4 class="titleBottom">Top 10 des Ordinateurs Portables de 2022</h4>
-        <p class="sentenceBottom">Nos meilleures recommandations pour divers besoins et budgets.</p>
+        <h4 class="titleBottom">Top 10 Laptops of 2022</h4>
+        <p class="sentenceBottom">
+          Our best picks for various needs and budgets.
+        </p>
       </div>
       <!-- Cinquième article avec image -->
       <div>
-        <img src="image-gaming-growth.jpg" alt="croissance du jeu vidéo" />
+        <img src="image-gaming-growth.jpg" alt="gaming growth" />
       </div>
       <!-- Sixième article avec numéro, titre et extrait -->
       <div>
         <span class="number">03</span>
-        <h4 class="titleBottom">La Croissance du Jeu Vidéo</h4>
-        <p class="sentenceBottom">Comment la pandémie a suscité de nouvelles opportunités.</p>
+        <h4 class="titleBottom">The Growth of Gaming</h4>
+        <p class="sentenceBottom">
+          How the pandemic has sparked fresh opportunities.
+        </p>
       </div>
     </section>
 
     <!-- Section de pied de page avec attribution -->
     <footer>
       <div class="attribution">
-        Challenge par
+        Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Codé par <a href="https://github.com/pELouanp">pELouanp</a>.
+        >. Coded by <a href="https://github.com/pELouanp">pELouanp</a>.
       </div>
     </footer>
 
